@@ -19,6 +19,12 @@ public class predictFI  {
         arrayList.stream().filter(predicate1).forEach(System.out::println);
 
 
+        Predicate<Integer> predicate2 = (val) -> (val>10);
+        System.out.println(predicate2.test(10));
+
+        Predicate<String> predicate3 = (str)->str.length()>4;
+        System.out.println(predicate3.test("Sonakshi"));
+
     }
 
 }
